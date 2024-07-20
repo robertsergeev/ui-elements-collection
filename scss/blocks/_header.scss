@@ -1,0 +1,119 @@
+.header {
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: #182333;
+    color: #fff;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    min-width: 150px;
+    text-align: center;
+}
+
+.menu li a{
+    color: #fff;
+}
+
+
+// burger
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    background: none;
+}
+
+.burger span {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #fff;
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    transform: translate(0, 10px);
+}
+
+.burger::after {
+    transform: translate(0, -10px);
+}
+
+.burger.active span{
+    transform: scale(0);
+}
+
+.burger.active::before {
+    transform: rotate(45deg);
+}
+
+.burger.active::after {
+    transform: rotate(-45deg);
+}
+
+.menu{
+    animation: burgerAnimation 0.3s ease;
+}
+
+@keyframes burgerAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+    }
+
+    nav.menu-opened{
+        position: absolute;
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #182333;
+    }
+
+    nav.menu-opened ul{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+}
