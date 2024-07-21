@@ -2,6 +2,8 @@
 
 This project is a collection of UI elements built with pure HTML, CSS, and JavaScript. It includes components like burger menu, slider, accordion, and more.
 
+## <a href="https://robertsergeev.github.io/ui-elements-collection/">Github Pages link</a>   
+
 ## Project Structure
 
 - `index.html`: The main HTML file.
@@ -11,7 +13,7 @@ This project is a collection of UI elements built with pure HTML, CSS, and JavaS
 ## Elements Included
 
 - Burger Menu
-- Slider (to be added)
+- Slider
 - Accordion (to be added)
 - Modal (to be added)
 - Tabs (to be added)

@@ -6,8 +6,23 @@
     <title>UI Elements</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/BurgerFullcreen.js" defer></script>
+    <script src="js/SliderFade.js" defer></script>
 </head>
 <body>
+    <svg display="none" aria-hidden="true">
+        <symbol id="icon-chevron-left" viewBox="0 0 24 32">
+            <path
+                d="M20.911 5.661l-9.482 9.482 9.482 9.482c0.446 0.446 0.446 1.161 0 1.607l-2.964 2.964c-0.446 0.446-1.161 0.446-1.607 0l-13.25-13.25c-0.446-0.446-0.446-1.161 0-1.607l13.25-13.25c0.446-0.446 1.161-0.446 1.607 0l2.964 2.964c0.446 0.446 0.446 1.161 0 1.607z">
+            </path>
+        </symbol>
+
+        <symbol id="icon-chevron-right" viewBox="0 0 22 32">
+            <path
+                d="M19.768 15.946l-13.25 13.25c-0.446 0.446-1.161 0.446-1.607 0l-2.964-2.964c-0.446-0.446-0.446-1.161 0-1.607l9.482-9.482-9.482-9.482c-0.446-0.446-0.446-1.161 0-1.607l2.964-2.964c0.446-0.446 1.161-0.446 1.607 0l13.25 13.25c0.446 0.446 0.446 1.161 0 1.607z">
+            </path>
+        </symbol>
+    </svg>
+
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -33,5 +48,30 @@
             </button>
         </div>
     </header>
+
+    <main>
+        <div class="slider">
+            <div class="container">
+                <h2>Slider Fade in/out</h2>
+                <div class="slider-fade" id="slider-fade">
+                    <button id="prev">
+                        <svg class="icon">
+                            <use xlink:href="#icon-chevron-left"></use>
+                        </svg>
+                    </button>
+                    <div class="images">
+                        <img src="assets/slides/1.png" alt="" class="active">
+                        <img src="assets/slides/2.png" alt="" class="">
+                        <img src="assets/slides/3.png" alt="" class="">
+                    </div>
+                    <button id="next">
+                        <svg class="icon">
+                            <use xlink:href="#icon-chevron-right"></use>
+                        </svg>
+                    </button>
+                </div>   
+            </div>
+        </div>
+    </main>
 </body>
 </html>

@@ -1,0 +1,48 @@
+.slider .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.images {
+    max-width: 600px;
+}
+
+.images img{
+    width: 100%;
+    display: none;
+}
+
+.images img.active {
+    display: block;
+    animation: sliderFadeAnimation 0.5s ease;
+}
+
+@keyframes sliderFadeAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slider-fade{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider-fade button{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px){
+    .slider svg.icon{
+        width: 32px;
+        height: 32px;
+    }
+}
