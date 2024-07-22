@@ -1,0 +1,39 @@
+.gallery {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.gallery .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery h3{
+    font-size: 2rem;
+} 
+
+.gallery-img {
+    max-width: 700px;
+}
+
+.gallery-selector ul{
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.gallery-selector li{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-selector li:hover{
+    opacity: 0.5;
+}
+
+.gallery-selector ul li {
+    max-width: 200px;
+}

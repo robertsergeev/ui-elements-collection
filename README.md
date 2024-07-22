@@ -14,6 +14,7 @@ This project is a collection of UI elements built with pure HTML, CSS, and JavaS
 
 - Burger Menu
 - Slider
+- Gallery
 - Accordion (to be added)
 - Modal (to be added)
 - Tabs (to be added)
