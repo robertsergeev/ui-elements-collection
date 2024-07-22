@@ -43,6 +43,12 @@ img {
   max-width: 100%;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .header {
   padding: 20px 0;
   text-transform: uppercase;
@@ -214,10 +220,6 @@ body.menu-opened .slider .images {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
-
-.gallery h3 {
-  font-size: 2rem;
 }
 
 .gallery-img {
