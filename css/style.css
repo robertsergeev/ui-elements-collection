@@ -263,6 +263,12 @@ body.menu-opened .slider .images {
   cursor: pointer;
 }
 
+@media screen and (max-width: 375px) {
+  .stars svg.icon {
+    height: 50px;
+    width: 50px;
+  }
+}
 .stars svg.filled {
   stroke: #000;
   fill: yellow;
