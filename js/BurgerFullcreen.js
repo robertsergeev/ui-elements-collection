@@ -1,4 +1,4 @@
-class BurgerFullcreen{
+class BurgerFullcreen {
     constructor(burger, menu) {
         this.burger = burger;
         this.menu = menu;
@@ -6,17 +6,17 @@ class BurgerFullcreen{
     }
 
     init() {
-        this.burger.addEventListener('click', this.toggleClass.bind(this))
+        this.burger.addEventListener("click", this.toggleClass.bind(this));
     }
 
     toggleClass(event) {
         event.preventDefault();
-        this.burger.classList.toggle('active');
-        this.menu.classList.toggle('menu-opened');
-        document.body.classList.toggle('menu-opened');
+        this.burger.classList.toggle("active");
+        this.menu.classList.toggle("menu-opened");
+        document.body.classList.toggle("menu-opened");
     }
 }
 
-const burger = document.querySelector('#burger');
-const menu = document.querySelector('#menu');
+const burger = document.querySelector("#burger");
+const menu = document.querySelector("#menu");
 new BurgerFullcreen(burger, menu);

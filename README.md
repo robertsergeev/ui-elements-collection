@@ -16,7 +16,7 @@ This project is a collection of UI elements built with pure HTML, CSS, and JavaS
 - Slider
 - Gallery
 - Rating Stars
-- Accordion (to be added)
+- Accordion
 - Modal (to be added)
 - Tabs (to be added)
 - Tooltip (to be added)

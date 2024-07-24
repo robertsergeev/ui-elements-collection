@@ -272,4 +272,47 @@ body.menu-opened .slider .images {
 .stars svg.filled {
   stroke: #000;
   fill: yellow;
+}
+
+.accordion-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.accordions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.accordion {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.accordion button {
+  font-size: 1.2rem;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  background-color: #f00;
+  color: #fff;
+  cursor: pointer;
+}
+
+.accordion p {
+  padding: 0 5px;
+  background-color: #f5f5f5;
+  border: 1px solid #000;
+  display: none;
+}
+
+@media screen and (max-width: 426px) {
+  .accordions {
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
